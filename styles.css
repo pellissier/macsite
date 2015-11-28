@@ -62,6 +62,7 @@ nav a:hover {
 section {
     float: left;
     padding-left: 50px;
+    max-width: 600px;
 }
 section a {
     color: #161D5F;
@@ -76,6 +77,16 @@ section ul {
 }
 section p {
     margin: 0;
+}
+
+.home .row {
+    margin: 10px 0;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.home .row img {
+    vertical-align: middle;
 }
 
 .program li {
