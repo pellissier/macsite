@@ -15,6 +15,9 @@
     padding-left: 50px;
     font-size: 4em;
     float: left;
+    height: 130px;
+    margin: 0;
+    line-height: 130px;
 }
 
 .petit-titre {
@@ -27,6 +30,7 @@
 }
 
 nav {
+    margin-top: 10px;
     width: 262px;
     float: left;
 }
@@ -60,6 +64,7 @@ nav a:hover {
 }
 
 section {
+    margin-top: 10px;
     float: left;
     padding-left: 50px;
     max-width: 600px;

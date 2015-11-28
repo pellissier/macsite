@@ -15,8 +15,12 @@
 		if (includeFile == "menu.html") {
 		    
 		    var pathName = $(location).attr("pathname"),
-		    pageName = pathName.substr(pathName.lastIndexOf("/") + 1),
-		    menuLinks = $("nav ul li");
+			pageName =
+			    pathName.substr(pathName.lastIndexOf("/") + 1),
+			menuLinks = $("nav ul li");
+
+		    pageName = pageName ? pageName : "index.html";
+		    
 		    menuLinks.removeClass("active");
 		    menuLinks
 			.find("a[href='" + pageName + "']")
