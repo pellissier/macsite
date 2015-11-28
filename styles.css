@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "ulf400";
+    src: url("./u1f400.ttf");
+}
+
+
+body {
+    font-size: 1em;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.escargot {
+    font-family: "ulf400", sans-serif;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+h1, h2, h3 {
+    font-weight: normal;
+    font-family: "Bistream Vera Sans", sans-serif;
+    margin: 0 0 5px 0;
+}
+p { 
+    margin: 10px 0;
+    font-family: "Bistream Vera Sans", sans-serif;
+}
+pre { font-family: "Bitstream Vera Mono", monospace;
+
+      background-color: #181818;
+      padding: 10px;
+      color: white;
+    }
+pre span {
+    color:#CCFFFF;
+}
+
+section h1 {
+    font-size: 1.5em;
+}
+section h2 {
+    font-size: 1.3em;
+}
+
+section h1 + div, section h2 + div { 
+    padding: 5px 5px 5px 24px;
+    margin-left: 10px;
+    border-left: 1px dashed black;
+}
+
+section h1 + div {
+    border-color: #CE1CA1;
+}
+section h2 + div {
+    border-color: #22C034;
+}
+
+pre a {
+    color: white;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 0 10px;
+    border-top: 1px solid grey;
+}
+
+noscript p{
+    padding: 15px;
+    border: 2px solid red;
+}
