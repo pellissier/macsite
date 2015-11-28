@@ -1,15 +1,30 @@
 (function () {
-    $(document).ready(function() {
 
+    var c = console;
+    
+    $(document).ready(function() {
+	 
 	// include files
 	$(".include").each(function () {
-            var $this = $(this),
+	    var $this = $(this),
 		includeFile = $this.data("include");
-            $this.load(includeFile + " .content-include");
-	}); 
 
-	// include escargots
-	var escargot = $("<span>").addClass("escargot").html("&#128012");
-	$(".include-escargot").prepend(escargot);
+	    $this.load(includeFile + " .content-include > *", function () {
+
+		// set the good menu li active
+		if (includeFile == "menu.html") {
+		    
+		    var pathName = $(location).attr("pathname"),
+		    pageName = pathName.substr(pathName.lastIndexOf("/") + 1),
+		    menuLinks = $("nav ul li");
+		    menuLinks.removeClass("active");
+		    menuLinks
+			.find("a[href='" + pageName + "']")
+			.parent().addClass("active");
+
+		}
+		
+	    });
+	});
     });
 })();
