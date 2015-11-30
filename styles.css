@@ -114,6 +114,10 @@ section p {
     margin-bottom: 15px;
 }
 
+.contact li {
+    margin-bottom: 15px;
+}
+
 footer {
     border-top: 1px solid #CCC;
     font-size: 0.9em;
