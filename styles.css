@@ -2,6 +2,10 @@
     font-family: Georgia,Palatino,Times,"Times New Roman",sans-serif;
 }
 
+header {
+    overflow: auto;
+}
+
 .clear {
     clear: both;
 }
